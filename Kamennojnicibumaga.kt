@@ -31,16 +31,16 @@ fun main() {
             continue
         }
 
-        break // Заканчиваем игру, если есть победитель
+        break 
     }
 }
 
 fun determineWinner(player: Int, computer: Int): String {
     return when {
         player == computer -> "Ничья!"
-        (player == 0 && computer == 1) || // Камень против Ножниц
-                (player == 1 && computer == 2) || // Ножницы против Бумаги
-                (player == 2 && computer == 0) ->  // Бумага против Камня
+        (player == 0 && computer == 1) || 
+                (player == 1 && computer == 2) || 
+                (player == 2 && computer == 0) ->  
             "Вы победили!"
         else -> "Вы проиграли!"
     }
@@ -53,4 +53,5 @@ fun readInt(scanner: Scanner): Int? {
         println("Ошибка: Введите целое число.")
         return null
     }
+
 }
