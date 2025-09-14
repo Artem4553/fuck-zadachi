@@ -22,7 +22,6 @@ fun main() {
     println("Итог:    $encryptedMessage")
 }
 
-// Создаем таблицу Виженера, используя стандартный алфавит и сдвиг как на картинке
 fun createStandardVigenereTableFromImage(alphabet: String): Array<CharArray> {
     val table = Array(alphabet.length) { CharArray(alphabet.length) }
     for (i in 0 until alphabet.length) {
